@@ -14,7 +14,7 @@ TagManager:
   - 
   - 
   - SolidObjects
-  - 
+  - BodyLayer
   - 
   - 
   - 
@@ -43,6 +43,15 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BodyBack
+    uniqueID: 1413918129
+    locked: 0
+  - name: BodyMiddle
+    uniqueID: 691720927
+    locked: 0
+  - name: BodyFront
+    uniqueID: 1218649491
     locked: 0
   - name: Foreground
     uniqueID: 3366921671
