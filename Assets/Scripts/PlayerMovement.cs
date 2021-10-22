@@ -8,15 +8,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Rigidbody2D frontLeg;
     [SerializeField] Rigidbody2D backCalve;
     [SerializeField] Rigidbody2D backLeg;
-    public float maxSpeed = 100f;
+
+    [SerializeField] int maxSpeed;
 
     HingeJoint2D frontCalveHinge;
     HingeJoint2D frontLegHinge;
     HingeJoint2D backCalveHinge;
     HingeJoint2D backLegHinge;
-
-    float xInput;
-    float yInput;
 
     private void Awake()
     {
@@ -24,7 +22,6 @@ public class PlayerMovement : MonoBehaviour
         frontLegHinge = frontLeg.gameObject.GetComponent<HingeJoint2D>();
         backCalveHinge = backCalve.gameObject.GetComponent<HingeJoint2D>();
         backLegHinge = backLeg.gameObject.GetComponent<HingeJoint2D>();
-
     }
 
     void Update()
@@ -34,34 +31,86 @@ public class PlayerMovement : MonoBehaviour
 
     public void HandleMovementUpdate()
     {
-        JointMotor2D fCalveMotor = frontCalveHinge.motor;
-        JointMotor2D fLegMotor = frontLegHinge.motor;
+        CalveMovement();
+        LegMovement();
+    }
 
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            frontCalveHinge.useMotor = true;
-            fCalveMotor.motorSpeed = maxSpeed;
-            frontCalveHinge.motor = fCalveMotor;
-        }
-        else if (Input.GetKeyDown(KeyCode.D))
-        {
-            frontCalveHinge.useMotor = true;
-            fCalveMotor.motorSpeed = -maxSpeed;
-            frontCalveHinge.motor = fCalveMotor;
-        }
+    public void LegMovement()
+    {
 
-        if (Input.GetKeyDown(KeyCode.S))
+        JointMotor2D frontLegMotor = frontLegHinge.motor;
+
+        if (Input.GetKey(KeyCode.S))
         {
-            frontLegHinge.useMotor = true;
-            fLegMotor.motorSpeed = maxSpeed;
-            frontLegHinge.motor = fLegMotor;
+            frontLegMotor.motorSpeed = maxSpeed;
+            frontLegHinge.motor = frontLegMotor;
         }
-        else if (Input.GetKeyDown(KeyCode.W))
+        else if (Input.GetKey(KeyCode.W))
         {
-            frontLegHinge.useMotor = true;
-            fLegMotor.motorSpeed = -maxSpeed;
-            frontLegHinge.motor = fLegMotor;
+            frontLegMotor.motorSpeed = -maxSpeed;
+            frontLegHinge.motor = frontLegMotor;
+        }
+        else
+        {
+            frontLegMotor.motorSpeed = 0;
+            frontLegHinge.motor = frontLegMotor;
         }
 
+        JointMotor2D backLegMotor = backLegHinge.motor;
+
+        if (Input.GetKey(KeyCode.I))
+        {
+            backLegMotor.motorSpeed = -maxSpeed;
+            backLegHinge.motor = backLegMotor;
+        }
+        else if (Input.GetKey(KeyCode.K))
+        {
+            backLegMotor.motorSpeed = maxSpeed;
+            backLegHinge.motor = backLegMotor;
+        }
+        else
+        {
+            backLegMotor.motorSpeed = 0;
+            backLegHinge.motor = backLegMotor;
+        }
+    }
+
+    public void CalveMovement()
+    {
+        JointMotor2D frontCalveMotor = frontCalveHinge.motor;
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            frontCalveMotor.motorSpeed = maxSpeed;
+            frontCalveHinge.motor = frontCalveMotor;
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            frontCalveMotor.motorSpeed = -maxSpeed;
+            frontCalveHinge.motor = frontCalveMotor;
+        }
+        else
+        {
+            frontCalveMotor.motorSpeed = 0;
+            frontCalveHinge.motor = frontCalveMotor;
+        }
+
+        JointMotor2D backCalveMotor = backCalveHinge.motor;
+
+        if (Input.GetKey(KeyCode.J))
+        {
+            backCalveMotor.motorSpeed = maxSpeed;
+            backCalveHinge.motor = backCalveMotor;
+        }
+        else if (Input.GetKey(KeyCode.L))
+        {
+            backCalveMotor.motorSpeed = -maxSpeed;
+            backCalveHinge.motor = backCalveMotor;
+        }
+        else
+        {
+            backCalveMotor.motorSpeed = 0;
+            backCalveHinge.motor = backCalveMotor;
+        }
     }
 }

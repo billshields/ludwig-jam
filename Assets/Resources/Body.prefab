@@ -152,9 +152,9 @@ HingeJoint2D:
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.1, y: 0.035}
   m_ConnectedAnchor: {x: 0, y: -0.31500006}
-  m_UseMotor: 0
+  m_UseMotor: 1
   m_Motor:
-    m_MotorSpeed: 100
+    m_MotorSpeed: 0
     m_MaximumMotorForce: 1000
   m_UseLimits: 1
   m_AngleLimits:
@@ -326,9 +326,9 @@ HingeJoint2D:
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.25}
   m_ConnectedAnchor: {x: 0, y: -0.44999993}
-  m_UseMotor: 0
+  m_UseMotor: 1
   m_Motor:
-    m_MotorSpeed: 100
+    m_MotorSpeed: 0
     m_MaximumMotorForce: 1000
   m_UseLimits: 1
   m_AngleLimits:
@@ -1018,9 +1018,9 @@ HingeJoint2D:
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.35}
   m_ConnectedAnchor: {x: 0, y: -0.5}
-  m_UseMotor: 0
+  m_UseMotor: 1
   m_Motor:
-    m_MotorSpeed: 100
+    m_MotorSpeed: 0
     m_MaximumMotorForce: 1000
   m_UseLimits: 1
   m_AngleLimits:
@@ -1206,10 +1206,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c53316bcc57ada47b70b49f15695d01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  frontCalve: {fileID: 0}
-  frontLeg: {fileID: 0}
-  backCalve: {fileID: 0}
-  backLeg: {fileID: 0}
+  frontCalve: {fileID: 5850509146693409334}
+  frontLeg: {fileID: 2974689912068212397}
+  backCalve: {fileID: 1480202316553368128}
+  backLeg: {fileID: 2166008077092468596}
   maxSpeed: 100
 --- !u!1 &2974689912068212392
 GameObject:
@@ -1365,9 +1365,9 @@ HingeJoint2D:
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.25}
   m_ConnectedAnchor: {x: 0, y: -0.44999993}
-  m_UseMotor: 0
+  m_UseMotor: 1
   m_Motor:
-    m_MotorSpeed: 100
+    m_MotorSpeed: 0
     m_MaximumMotorForce: 1000
   m_UseLimits: 1
   m_AngleLimits:
@@ -1537,9 +1537,9 @@ HingeJoint2D:
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.1, y: 0.035}
   m_ConnectedAnchor: {x: 0, y: -0.31500006}
-  m_UseMotor: 0
+  m_UseMotor: 1
   m_Motor:
-    m_MotorSpeed: 100
+    m_MotorSpeed: 0
     m_MaximumMotorForce: 1000
   m_UseLimits: 1
   m_AngleLimits:
@@ -1711,9 +1711,9 @@ HingeJoint2D:
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.35}
   m_ConnectedAnchor: {x: 0, y: -0.5}
-  m_UseMotor: 0
+  m_UseMotor: 1
   m_Motor:
-    m_MotorSpeed: 100
+    m_MotorSpeed: 0
     m_MaximumMotorForce: 1000
   m_UseLimits: 1
   m_AngleLimits:
