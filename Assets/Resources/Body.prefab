@@ -154,8 +154,8 @@ HingeJoint2D:
   m_ConnectedAnchor: {x: 0, y: -0.31500006}
   m_UseMotor: 0
   m_Motor:
-    m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
+    m_MotorSpeed: 100
+    m_MaximumMotorForce: 1000
   m_UseLimits: 1
   m_AngleLimits:
     m_LowerAngle: 0
@@ -329,7 +329,7 @@ HingeJoint2D:
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 100
-    m_MaximumMotorForce: 10000
+    m_MaximumMotorForce: 1000
   m_UseLimits: 1
   m_AngleLimits:
     m_LowerAngle: 0
@@ -503,8 +503,8 @@ HingeJoint2D:
   m_ConnectedAnchor: {x: 0.06, y: 0.58000004}
   m_UseMotor: 0
   m_Motor:
-    m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
+    m_MotorSpeed: 100
+    m_MaximumMotorForce: 1000
   m_UseLimits: 1
   m_AngleLimits:
     m_LowerAngle: 0
@@ -846,8 +846,8 @@ HingeJoint2D:
   m_ConnectedAnchor: {x: 0.05, y: 0.45}
   m_UseMotor: 0
   m_Motor:
-    m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
+    m_MotorSpeed: 100
+    m_MaximumMotorForce: 1000
   m_UseLimits: 1
   m_AngleLimits:
     m_LowerAngle: -90
@@ -1020,7 +1020,7 @@ HingeJoint2D:
   m_ConnectedAnchor: {x: 0, y: -0.5}
   m_UseMotor: 0
   m_Motor:
-    m_MotorSpeed: -50
+    m_MotorSpeed: 100
     m_MaximumMotorForce: 1000
   m_UseLimits: 1
   m_AngleLimits:
@@ -1051,6 +1051,7 @@ GameObject:
   - component: {fileID: 2974689911996714471}
   - component: {fileID: 2974689911996714468}
   - component: {fileID: 6265555918970222139}
+  - component: {fileID: 6079335003307808403}
   m_Layer: 9
   m_Name: Body
   m_TagString: Untagged
@@ -1193,6 +1194,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a9bf11a00437494ebb68669ba3ab482, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6079335003307808403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2974689911996714467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c53316bcc57ada47b70b49f15695d01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frontCalve: {fileID: 0}
+  frontLeg: {fileID: 0}
+  backCalve: {fileID: 0}
+  backLeg: {fileID: 0}
+  maxSpeed: 100
 --- !u!1 &2974689912068212392
 GameObject:
   m_ObjectHideFlags: 0
@@ -1350,7 +1368,7 @@ HingeJoint2D:
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 100
-    m_MaximumMotorForce: 10000
+    m_MaximumMotorForce: 1000
   m_UseLimits: 1
   m_AngleLimits:
     m_LowerAngle: 0
@@ -1521,8 +1539,8 @@ HingeJoint2D:
   m_ConnectedAnchor: {x: 0, y: -0.31500006}
   m_UseMotor: 0
   m_Motor:
-    m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
+    m_MotorSpeed: 100
+    m_MaximumMotorForce: 1000
   m_UseLimits: 1
   m_AngleLimits:
     m_LowerAngle: 0
@@ -1695,7 +1713,7 @@ HingeJoint2D:
   m_ConnectedAnchor: {x: 0, y: -0.5}
   m_UseMotor: 0
   m_Motor:
-    m_MotorSpeed: -50
+    m_MotorSpeed: 100
     m_MaximumMotorForce: 1000
   m_UseLimits: 1
   m_AngleLimits:
