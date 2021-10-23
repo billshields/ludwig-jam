@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Rigidbody2D backCalve;
     [SerializeField] Rigidbody2D backLeg;
 
+    [SerializeField] GrabController grabController;
+
     [SerializeField] int maxSpeed;
 
     HingeJoint2D frontCalveHinge;
@@ -33,6 +35,15 @@ public class PlayerMovement : MonoBehaviour
     {
         CalveMovement();
         LegMovement();
+        GrabHandle();
+    }
+
+    public void GrabHandle()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            grabController.Grab();
+        }
     }
 
     public void LegMovement()

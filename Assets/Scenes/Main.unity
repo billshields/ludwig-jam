@@ -1203,6 +1203,18 @@ Rigidbody2D:
     type: 3}
   m_PrefabInstance: {fileID: 2974689911023128753}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1884933441 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8986196392963794570, guid: 641fbf405c0c0814788e144750851a29,
+    type: 3}
+  m_PrefabInstance: {fileID: 2974689911023128753}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e63ee8d3de1d77b44ab212d776af5451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &1915600305 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 5850509146693409334, guid: 641fbf405c0c0814788e144750851a29,
@@ -1358,6 +1370,11 @@ PrefabInstance:
       propertyPath: m_LinearDrag
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3765485080702175661, guid: 641fbf405c0c0814788e144750851a29,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4542837166243799395, guid: 641fbf405c0c0814788e144750851a29,
         type: 3}
       propertyPath: m_Motor.m_MaximumMotorForce
@@ -1437,6 +1454,16 @@ PrefabInstance:
         type: 3}
       propertyPath: maxSpeed
       value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 6079335003307808403, guid: 641fbf405c0c0814788e144750851a29,
+        type: 3}
+      propertyPath: grabController
+      value: 
+      objectReference: {fileID: 1884933441}
+    - target: {fileID: 6190165322043420300, guid: 641fbf405c0c0814788e144750851a29,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6334869987261981102, guid: 641fbf405c0c0814788e144750851a29,
         type: 3}
