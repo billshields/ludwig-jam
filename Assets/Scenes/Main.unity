@@ -495,7 +495,9 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'WASD - front leg
 
-    IJKL - back leg'
+    IJKL - back leg
+
+    Mouse - arm'
 --- !u!222 &1323381953
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1240,40 +1242,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1480202316553368128, guid: 641fbf405c0c0814788e144750851a29,
+    - target: {fileID: 390339370806939680, guid: 641fbf405c0c0814788e144750851a29,
         type: 3}
       propertyPath: m_Mass
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1480202316553368128, guid: 641fbf405c0c0814788e144750851a29,
+    - target: {fileID: 390339370806939680, guid: 641fbf405c0c0814788e144750851a29,
         type: 3}
       propertyPath: m_AngularDrag
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1596317168522849485, guid: 641fbf405c0c0814788e144750851a29,
-        type: 3}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1596317168522849485, guid: 641fbf405c0c0814788e144750851a29,
-        type: 3}
-      propertyPath: m_AngularDrag
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1596317168522849485, guid: 641fbf405c0c0814788e144750851a29,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1596317168522849485, guid: 641fbf405c0c0814788e144750851a29,
+    - target: {fileID: 390339370806939680, guid: 641fbf405c0c0814788e144750851a29,
         type: 3}
       propertyPath: m_LinearDrag
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2166008077092468596, guid: 641fbf405c0c0814788e144750851a29,
+    - target: {fileID: 1596317168522849485, guid: 641fbf405c0c0814788e144750851a29,
         type: 3}
-      propertyPath: m_AngularDrag
-      value: 1
+      propertyPath: m_Mass
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2974689910508136820, guid: 641fbf405c0c0814788e144750851a29,
         type: 3}
@@ -1355,30 +1342,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2974689912068212397, guid: 641fbf405c0c0814788e144750851a29,
-        type: 3}
-      propertyPath: m_AngularDrag
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2974689912098674235, guid: 641fbf405c0c0814788e144750851a29,
         type: 3}
       propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2974689912098674235, guid: 641fbf405c0c0814788e144750851a29,
-        type: 3}
-      propertyPath: m_AngularDrag
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2974689912098674235, guid: 641fbf405c0c0814788e144750851a29,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2974689912098674235, guid: 641fbf405c0c0814788e144750851a29,
-        type: 3}
-      propertyPath: m_LinearDrag
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3765485080702175661, guid: 641fbf405c0c0814788e144750851a29,
         type: 3}
@@ -1419,16 +1386,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Motor.m_MaximumMotorForce
       value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 5850509146693409334, guid: 641fbf405c0c0814788e144750851a29,
-        type: 3}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5850509146693409334, guid: 641fbf405c0c0814788e144750851a29,
-        type: 3}
-      propertyPath: m_AngularDrag
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6079335003307808403, guid: 641fbf405c0c0814788e144750851a29,
         type: 3}
@@ -1514,6 +1471,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Motor.m_MaximumMotorForce
       value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8986196392963794570, guid: 641fbf405c0c0814788e144750851a29,
+        type: 3}
+      propertyPath: armSpeed
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 9115271869204360584, guid: 641fbf405c0c0814788e144750851a29,
         type: 3}

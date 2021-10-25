@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class GrabController : MonoBehaviour
 {
+    public float armSpeed = 1f;
+    
     private Rigidbody2D grabRB;
+
 
     public bool canGrab;
     public bool isGrabbing;
@@ -16,6 +19,12 @@ public class GrabController : MonoBehaviour
 
     private void Update()
     {
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePosition.z = Camera.main.nearClipPlane;
+
+        float step = armSpeed * Time.deltaTime;
+        transform.position = Vector3.MoveTowards(transform.position, mousePosition, step);          //Sucks fat ass
+
         if (isGrabbing)
         {
             grabRB.bodyType = RigidbodyType2D.Static;
