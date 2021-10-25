@@ -769,18 +769,18 @@ CompositeCollider2D:
   m_ColliderPaths:
   - m_Collider: {fileID: 1623329490}
     m_ColliderPaths:
-    - - X: -58750000
+    - - X: 70000000
+        Y: -35000000
+      - X: 70000000
+        Y: -20000000
+      - X: -60000000
+        Y: -20000000
+      - X: -60000000
+        Y: -35000000
+      - X: -58750000
         Y: -36250000
       - X: 68750000
         Y: -36250000
-      - X: 70000000
-        Y: -35000000
-      - X: 70000000
-        Y: -20000000
-      - X: -60000000
-        Y: -20000000
-      - X: -60000000
-        Y: -35000000
   m_CompositePaths:
     m_Paths:
     - - {x: 7, y: -3.5}
@@ -1248,12 +1248,12 @@ PrefabInstance:
     - target: {fileID: 1480202316553368128, guid: 641fbf405c0c0814788e144750851a29,
         type: 3}
       propertyPath: m_AngularDrag
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1596317168522849485, guid: 641fbf405c0c0814788e144750851a29,
         type: 3}
       propertyPath: m_Mass
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1596317168522849485, guid: 641fbf405c0c0814788e144750851a29,
         type: 3}
@@ -1273,12 +1273,22 @@ PrefabInstance:
     - target: {fileID: 2166008077092468596, guid: 641fbf405c0c0814788e144750851a29,
         type: 3}
       propertyPath: m_AngularDrag
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2974689910508136820, guid: 641fbf405c0c0814788e144750851a29,
         type: 3}
       propertyPath: m_AngularDrag
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2974689910946282463, guid: 641fbf405c0c0814788e144750851a29,
+        type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2974689911106666670, guid: 641fbf405c0c0814788e144750851a29,
+        type: 3}
+      propertyPath: m_Mass
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2974689911996714467, guid: 641fbf405c0c0814788e144750851a29,
         type: 3}
@@ -1348,12 +1358,12 @@ PrefabInstance:
     - target: {fileID: 2974689912068212397, guid: 641fbf405c0c0814788e144750851a29,
         type: 3}
       propertyPath: m_AngularDrag
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2974689912098674235, guid: 641fbf405c0c0814788e144750851a29,
         type: 3}
       propertyPath: m_Mass
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2974689912098674235, guid: 641fbf405c0c0814788e144750851a29,
         type: 3}
@@ -1418,7 +1428,7 @@ PrefabInstance:
     - target: {fileID: 5850509146693409334, guid: 641fbf405c0c0814788e144750851a29,
         type: 3}
       propertyPath: m_AngularDrag
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6079335003307808403, guid: 641fbf405c0c0814788e144750851a29,
         type: 3}
